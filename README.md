@@ -20,3 +20,10 @@ bundle install
 rails new . --css tailwind -d postgresql
 rails db:create
 ```
+
+``` config/application.rb
+# タイムゾーンをTokyo（日本）にする
+   config.time_zone = "Tokyo"
+# デフォルトのロケールを日本にする
+   config.i18n.default_locale = :ja
+```
