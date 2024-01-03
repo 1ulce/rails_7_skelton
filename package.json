@@ -1,0 +1,12 @@
+{
+  "name": "rails_7_skelton",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "lint-staged": "^15.1.0"
+  },
+  "scripts": {
+    "prepare": "husky install"
+  }
+}

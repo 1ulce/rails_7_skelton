@@ -123,6 +123,8 @@ GEM
     factory_bot_rails (6.4.3)
       factory_bot (~> 6.4)
       railties (>= 5.0.0)
+    gimei (1.2.0)
+      romaji
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.1)
@@ -178,6 +180,7 @@ GEM
     nokogiri (1.16.0-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
+    pagy (6.2.0)
     parallel (1.24.0)
     parser (3.2.2.4)
       ast (~> 2.4.1)
@@ -241,6 +244,8 @@ GEM
       actionpack (>= 5.2)
       railties (>= 5.2)
     rexml (3.2.6)
+    romaji (0.2.4)
+      rake (>= 0.8.0)
     rubocop (1.59.0)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
@@ -260,6 +265,11 @@ GEM
       rubocop (~> 1.33)
     rubocop-performance (1.20.1)
       rubocop (>= 1.48.1, < 2.0)
+      rubocop-ast (>= 1.30.0, < 2.0)
+    rubocop-rails (2.23.1)
+      activesupport (>= 4.2.0)
+      rack (>= 1.1)
+      rubocop (>= 1.33.0, < 2.0)
       rubocop-ast (>= 1.30.0, < 2.0)
     rubocop-rake (0.6.0)
       rubocop (~> 1.0)
@@ -310,6 +320,7 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    ulid (1.4.0)
     unicode-display_width (2.5.0)
     uniform_notifier (1.16.0)
     warden (1.2.9)
@@ -341,15 +352,17 @@ DEPENDENCIES
   debug
   devise
   factory_bot_rails
+  gimei
   importmap-rails
   jbuilder
   letter_opener_web
+  pagy
   pg (~> 1.1)
   puma (>= 5.0)
   rails (~> 7.1.2)
   redis (>= 4.0.1)
-  rubocop
   rubocop-performance
+  rubocop-rails
   rubocop-rake
   rubocop-rspec
   selenium-webdriver
@@ -360,6 +373,7 @@ DEPENDENCIES
   tailwindcss-rails
   turbo-rails
   tzinfo-data
+  ulid
   web-console
 
 RUBY VERSION

@@ -74,3 +74,7 @@ RSpec/SubjectStub:
 # Offense count: 12
 Rake/MethodDefinitionInTask:
   Enabled: false
+
+Style/NumericLiterals:
+  Exclude:
+    - 'db/schema.rb'

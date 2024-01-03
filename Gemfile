@@ -49,16 +49,16 @@ gem "bootsnap", require: false
 
 group :development, :test do
   gem 'annotate'
-  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem "debug", platforms: %i[ mri windows ]
+  gem 'debug', platforms: %i[mri windows]
+  gem 'gimei'
 end
 
 group :development do
   gem 'brakeman'
   gem 'bullet'
   gem 'letter_opener_web'
-  gem 'rubocop', require: false
   gem 'rubocop-performance', require: false
+  gem 'rubocop-rails', require: false
   gem 'rubocop-rake', require: false
   gem 'rubocop-rspec', require: false
   # Use console on exceptions pages [https://github.com/rails/web-console]
@@ -80,5 +80,21 @@ end
 
 # 1ulce add
 gem 'devise'
+gem 'pagy'
 gem 'sidekiq'
 gem 'slim-rails'
+gem 'ulid'
+
+# 大体入れとけ、おすすめgem
+# gem 'paranoia'
+# gem 'carrierwave'
+# gem 'rmagick'
+# gem 'aws-sdk-s3'
+# gem 'fog-aws'
+# gem 'omniauth-line'
+# gem 'line-bot-api'
+# gem 'dotenv-rails'
+# gem 'faraday'
+# gem 'stripe'
+# gem 'jp_prefecture'
+# gem 'ransack'

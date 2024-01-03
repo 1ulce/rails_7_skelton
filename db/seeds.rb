@@ -7,3 +7,8 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+User.create(
+  (1..100).map do |_i|
+    { name: Gimei.unique.name, uuid: ULID.generate }
+  end
+)

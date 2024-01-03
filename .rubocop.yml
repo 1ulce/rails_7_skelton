@@ -204,7 +204,7 @@ Gemspec/DependencyVersion:
 Style/RequireOrder:
   Enabled: true
 
-Documentation:
+Style/Documentation:
   Enabled: false
 
 Style/FrozenStringLiteralComment:
