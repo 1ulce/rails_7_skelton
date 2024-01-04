@@ -2,6 +2,8 @@ class UsersController < ApplicationController
   include Pagy::Backend
 
   def index
-    @pagy, @users = pagy(User.all)
+    @search = User.ransack(params[:q])
+    @search.sorts = 'id desc' if @search.sorts.empty?
+    @pagy, @users = pagy(@search.result)
   end
 end

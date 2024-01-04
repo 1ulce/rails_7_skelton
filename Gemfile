@@ -85,6 +85,7 @@ gem 'pagy'
 gem 'sidekiq'
 gem 'slim-rails'
 gem 'ulid'
+gem 'ransack'
 
 # 大体入れとけ、おすすめgem
 # gem 'paranoia'
@@ -98,4 +99,3 @@ gem 'ulid'
 # gem 'faraday'
 # gem 'stripe'
 # gem 'jp_prefecture'
-# gem 'ransack'
