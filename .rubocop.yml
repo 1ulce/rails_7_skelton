@@ -203,6 +203,8 @@ Gemspec/DependencyVersion:
 
 Style/RequireOrder:
   Enabled: true
+  Exclude:
+    - 'config/boot.rb'
 
 Style/Documentation:
   Enabled: false
