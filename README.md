@@ -11,6 +11,9 @@ slim
 独自仕様
 project_constant.yml
 
+new rails way
+binding.pry → binding.irb
+
 ```
 rbenv local 3.2.2
 bundle init

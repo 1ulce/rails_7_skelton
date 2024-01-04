@@ -1,0 +1,9 @@
+{
+
+  "{app,config,db/seeds,lib,script,spec}/**/*.{rb,rake}": [
+
+      "bundle exec rubocop --config .rubocop.yml --parallel -A"
+
+  ]
+
+}

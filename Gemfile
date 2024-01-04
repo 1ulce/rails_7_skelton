@@ -48,11 +48,19 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
+  gem 'annotate'
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
 end
 
 group :development do
+  gem 'brakeman'
+  gem 'bullet'
+  gem 'letter_opener_web'
+  gem 'rubocop', require: false
+  gem 'rubocop-performance', require: false
+  gem 'rubocop-rake', require: false
+  gem 'rubocop-rspec', require: false
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 
@@ -66,5 +74,11 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
+  gem 'factory_bot_rails'
   gem "selenium-webdriver"
 end
+
+# 1ulce add
+gem 'devise'
+gem 'sidekiq'
+gem 'slim-rails'
