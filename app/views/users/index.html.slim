@@ -1,4 +1,13 @@
-h1.text-3xl.font-bold.underline hello world!
+#page
+  h1.text-3xl.font-bold.underline hello world!
 
-== render partial: 'pagy/nav', locals: {pagy: @pagy}
-= link_to "New user", new_user_path
+  #paginate
+    == pagy_nav(@pagy)
+  .mt-10#users
+    - @users.each do |user|
+      #user
+        = link_to user.name, user
+        = link_to 'Edit', edit_user_path(user)
+        = link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' }
+  #footer
+    = link_to 'New user', new_user_path
